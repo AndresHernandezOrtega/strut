@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strut | Iniciar sesion</title>
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+
+    <!-- STYLESSHETS -->
+    <link rel="stylesheet" href="../styles/login_styles/style.css">
+    <link rel="stylesheet" href="../styles/components_styles/style.css">
+    <link rel="stylesheet" href="../styles/home_styles/style.css">
+</head>
+<body>
+    
+    <header>
+        <img src="../assets/Logo Strut.png" alt="Logo" class="logo">
+        <div class="buttons_login">
+        </div>
+    </header>
+
+    <main>
+        <form class="login_form">
+            <h2>Iniciar sesion</h2>
+            
+            <div class="error_credentials" hidden>El usuario o la contraseña son incorrectos</div>
+            
+            <input type="email" class="input" id="email" placeholder="Correo electronico">
+            
+            <input type="password" class="input" id="password" placeholder="Contraseña">
+            
+            <input type="submit" value="Acceder" class="button_prymary login">
+            
+            <a href="../views/register.html">¿Aun no tienes una cuenta?. Registrarse</a>
+        </form>
+    </main>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+        <script src="../js/login.js"></script>
+</body>
+</html>

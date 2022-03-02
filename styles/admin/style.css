@@ -1,0 +1,480 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+aside {
+  width: 25vw;
+  background-color: #3E4095;
+  min-height: 100%;
+  -webkit-box-shadow: 0px 0px 6px 0px #000000;
+  box-shadow: 0px 0px 6px 0px #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: safe;
+      -ms-flex-pack: safe;
+          justify-content: safe;
+}
+
+aside .usuario span {
+  font-size: 0.8rem;
+}
+
+aside .usuario:hover {
+  cursor: pointer;
+  background-color: #2b2c8b;
+}
+
+aside img {
+  width: 10vw;
+  margin: 30px 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+aside h1 {
+  color: white;
+  padding: 10px;
+}
+
+aside i {
+  margin-right: 15px;
+}
+
+aside .aside_btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10px;
+}
+
+aside .aside_btn:hover {
+  cursor: pointer;
+  background-color: #2b2c8b;
+}
+
+.add_button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.module {
+  width: 100%;
+  padding: 3%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.module .module_tittle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.module hr {
+  border-color: #3E4095;
+  padding: 0 10px;
+}
+
+.productos_module .add_product_form {
+  margin: 20px 0;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.productos_module .add_product_form select {
+  width: 80%;
+}
+
+.productos_module .update_product_form {
+  margin: 20px 0;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.productos_module .registered_products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  overflow: scroll;
+  height: 70vh;
+  -webkit-box-pack: safe;
+      -ms-flex-pack: safe;
+          justify-content: safe;
+}
+
+.productos_module .registered_products .registered_product {
+  border: 1px solid #3E4095;
+  width: 18%;
+  border-top-right-radius: 20px;
+  padding: 10px;
+  margin: 10px 1%;
+}
+
+.productos_module .registered_products .registered_product:hover {
+  border: none;
+  -webkit-box-shadow: 0px 0px 15px -3px #000000;
+  box-shadow: 0px 0px 15px -3px #000000;
+}
+
+.productos_module .registered_products .registered_product .ref {
+  color: #464646;
+  font-size: 1rem;
+}
+
+.productos_module .registered_products .registered_product .product_name {
+  margin-bottom: 10px;
+}
+
+.productos_module .registered_products .registered_product .stock {
+  color: #464646;
+  font-size: 1.2rem;
+}
+
+.productos_module .registered_products .registered_product .price {
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #15BDCA;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.productos_module .registered_products .registered_product .button {
+  margin: 5px 2px;
+  font-size: 1.5rem;
+  padding: 2px;
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+  justify-self: flex-end;
+}
+
+.productos_module .registered_products .registered_product .button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+}
+
+.suppliers_module .add_supplier_form {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.suppliers_module .update_supplier_form {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.suppliers_module .registered_suppliers {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.suppliers_module .registered_suppliers .registered_supplier {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 5px;
+  padding: 5px;
+}
+
+.suppliers_module .registered_suppliers .registered_supplier:hover {
+  -webkit-box-shadow: 0px 0px 3px 0px #000000;
+  box-shadow: 0px 0px 3px 0px #000000;
+}
+
+.suppliers_module .registered_suppliers .registered_supplier .supplier_avatar {
+  background-color: #15BDCA;
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #3E4095;
+  border-radius: 50%;
+  font-weight: 900;
+}
+
+.suppliers_module .registered_suppliers .registered_supplier h2 {
+  color: #464646;
+  font-size: 10pt;
+}
+
+.suppliers_module .registered_suppliers .registered_supplier .supplier_addres {
+  width: 40%;
+  overflow: hidden;
+}
+
+.suppliers_module .registered_suppliers .registered_supplier .button {
+  margin: 5px 2px;
+  font-size: 1rem;
+  padding: 2px;
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+  justify-self: flex-end;
+}
+
+.suppliers_module .registered_suppliers .registered_supplier .button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+}
+
+.clients_module .add_client_form, .clients_module .update_client_form {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.clients_module .registered_clients {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.clients_module .registered_clients .registered_client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 5px;
+  padding: 5px;
+}
+
+.clients_module .registered_clients .registered_client:hover {
+  -webkit-box-shadow: 0px 0px 3px 0px #000000;
+  box-shadow: 0px 0px 3px 0px #000000;
+}
+
+.clients_module .registered_clients .registered_client .client_avatar {
+  background-color: #4c8ac4;
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #3E4095;
+  border-radius: 50%;
+  font-weight: 900;
+}
+
+.clients_module .registered_clients .registered_client h2 {
+  color: #464646;
+  font-size: 10pt;
+}
+
+.clients_module .registered_clients .registered_client .supplier_addres {
+  width: 40%;
+  overflow: hidden;
+}
+
+.clients_module .registered_clients .registered_client .button {
+  margin: 5px 2px;
+  font-size: 1rem;
+  padding: 2px;
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+  justify-self: flex-end;
+}
+
+.clients_module .registered_clients .registered_client .button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+}
+
+.orders_module .add_order_form {
+  padding: 20px 0;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.orders_module .add_order_form label {
+  margin-top: 10px;
+}
+
+.orders_module .add_order_form input {
+  border: 2px solid #15BDCA;
+}
+
+.orders_module .add_order_form .product_suggestion {
+  margin: 10px 0;
+  background-color: #15BDCA;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.orders_module .add_order_form .product_suggestion:hover {
+  background-color: white;
+  border: 3px solid #15BDCA;
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+  cursor: pointer;
+}
+
+.orders_module .registered_orders {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.orders_module .registered_orders .registered_order {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin: 10px 0;
+}
+
+.orders_module .registered_orders .registered_order:hover {
+  -webkit-box-shadow: 0px 0px 3px 0px #000000;
+  box-shadow: 0px 0px 3px 0px #000000;
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+}
+
+.orders_module .registered_orders .registered_order .order_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #15BDCA;
+  padding: 5px;
+}
+
+.orders_module .registered_orders .registered_order .order_data h2 {
+  font-size: 1rem;
+}
+
+.orders_module .registered_orders .registered_order .details {
+  background-color: #3E4095;
+  color: white;
+  padding: 5px;
+}
+
+.orders_module .registered_orders .registered_order .details .detail {
+  padding: 10px 0;
+  border-bottom: 1px solid white;
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=style.css.map */

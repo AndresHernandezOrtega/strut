@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main .register_form {
+  width: 60%;
+  border-radius: 3px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: unset;
+  padding: 50px;
+}
+
+body main .register_form select {
+  width: 100%;
+}
+
+body main .register_form input {
+  width: 100%;
+  height: 30px !important;
+  font-size: 0.9rem !important;
+}
+
+body main .register_form .name, body main .register_form .lastName, body main .register_form .pass {
+  width: 48%;
+}
+
+body main .register_form h2 {
+  font-size: 1.5rem;
+  color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body main .register_form .credenciales {
+  width: 100%;
+  height: 40px;
+  background-color: #fc6363;
+  color: #fff;
+  font-size: 1.5rem;
+  border: 2px solid red;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 50%;
+}
+
+body main .register_form .bussines_info {
+  margin: 20px 0;
+  border-radius: 3px;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

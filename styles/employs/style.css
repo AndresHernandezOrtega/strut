@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+}
+
+.registered_orders {
+  overflow-y: scroll;
+}
+
+.registered_orders .registered_order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin: 30px 10px;
+  background-color: #dadada;
+}
+
+.registered_orders .registered_order:hover {
+  -webkit-box-shadow: 0px 0px 3px 0px #000000;
+  box-shadow: 0px 0px 3px 0px #000000;
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+}
+
+.registered_orders .registered_order .order_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #15BDCA;
+  padding: 5px;
+}
+
+.registered_orders .registered_order .order_data h2 {
+  font-size: 1rem;
+}
+
+.registered_orders .registered_order .details {
+  background-color: #3E4095;
+  color: white;
+  padding: 5px;
+}
+
+.registered_orders .registered_order .details .detail {
+  padding: 10px 0;
+  border-bottom: 1px solid white;
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=style.css.map */

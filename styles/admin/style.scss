@@ -1,0 +1,394 @@
+@import "../colors";
+
+body{
+    min-height: 100vh;
+
+    display: flex;
+}
+aside{
+    width: 25vw;
+    background-color: $dark_blue;
+    min-height: 100%;
+    -webkit-box-shadow: 0px 0px 6px 0px #000000; 
+    box-shadow: 0px 0px 6px 0px #000000;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: safe;
+
+    .usuario{
+        span{
+            font-size: 0.8rem;
+
+        }
+        &:hover{
+            cursor: pointer;
+            background-color: #2b2c8b;
+        }
+
+    }
+    img{
+        width: 10vw;
+        margin: 30px 0;
+        align-self: center;
+    }
+    h1{
+        color: white;
+        padding: 10px;
+
+    }
+
+    i{
+        margin-right: 15px;
+    }
+    .aside_btn{
+        background-color: transparent;
+        border: none;
+        color: white;
+        display: flex;
+        font-size: 1.2rem;
+        justify-content: left;
+        align-items: center;
+        padding: 10px 10px ;
+
+        
+
+
+        
+
+        &:hover{
+            cursor: pointer;
+            background-color: #2b2c8b;
+
+        }
+    }
+    
+}
+
+.add_button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+// PRODUCTOS ----------------------------------------------------
+
+.module {
+
+    width: 100%;
+    padding: 3%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    .module_tittle{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    hr{
+        border-color: $dark_blue;
+        padding: 0 10px;
+    }
+}
+
+.productos_module{
+    
+
+    
+    
+
+    .add_product_form{
+        margin: 20px 0;
+        display: none;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        
+        select{
+            width: 80%;
+        }
+    }
+
+    .update_product_form{
+        
+        margin: 20px 0;
+        display: none;
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+
+    .registered_products{
+        display: flex;
+        flex-flow: row wrap;
+        overflow: scroll;
+        height: 70vh;
+        justify-content: safe;
+        .registered_product{
+            border: 1px solid $dark_blue;
+            width: 18%;
+            border-top-right-radius: 20px;
+            padding: 10px;
+            margin: 10px 1%;
+
+    
+            &:hover{
+                border: none;
+                -webkit-box-shadow: 0px 0px 15px -3px #000000; 
+                box-shadow: 0px 0px 15px -3px #000000;
+            }
+            
+            .ref{
+                color: $text_gray;
+                font-size: 1rem;
+            }
+    
+            .product_name{
+                margin-bottom: 10px;
+            }
+    
+            .stock{
+                color: $text_gray;
+                font-size: 1.2rem;
+            }
+    
+                
+            .price{
+                width: 100%;
+                justify-content: flex-start;
+                background-color: $light_blue;
+                margin-top: 10px;
+                padding: 5px;
+                border-radius: 5px;
+            }
+    
+            .button{
+                margin: 5px 2px;
+                font-size: 1.5rem;
+                padding: 2px;
+                transition: 200ms ease-in;
+                justify-self: flex-end;
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    transition: 200ms ease-in;
+                }
+            }
+            
+    
+        }
+    }
+    
+}
+
+// PROVEEDORES -------------------------------------
+
+.suppliers_module{
+
+    .add_supplier_form{
+        
+        display: none;
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+
+    .update_supplier_form{
+        display: none;
+
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+
+    .registered_suppliers{
+
+        overflow: scroll;
+        overflow-x: hidden;
+
+        .registered_supplier{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 5px;
+            padding: 5px;
+            
+            &:hover{
+                -webkit-box-shadow: 0px 0px 3px 0px #000000; 
+                box-shadow: 0px 0px 3px 0px #000000;
+            }
+    
+            .supplier_avatar{
+                background-color: $light_blue;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid $dark_blue;
+                border-radius: 50%;
+                font-weight: 900;
+            }
+            h2{
+                color: $text_gray;
+                font-size: 10pt;
+            }
+            
+            .supplier_addres{
+                width: 40%;
+                overflow: hidden;
+            }
+            .button{
+                margin: 5px 2px;
+                font-size: 1rem;
+                padding: 2px;
+                transition: 200ms ease-in;
+                justify-self: flex-end;
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    transition: 200ms ease-in;
+                }
+            }
+        }
+    }
+}   
+
+// CLIENTES ------------------------------------------------
+.clients_module{
+
+    .add_client_form , .update_client_form{
+
+        display: none;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        
+    }
+
+    .registered_clients{
+
+        overflow: scroll;
+        overflow-x: hidden;
+
+        .registered_client{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 5px;
+            padding: 5px;
+            
+            &:hover{
+                -webkit-box-shadow: 0px 0px 3px 0px #000000; 
+                box-shadow: 0px 0px 3px 0px #000000;
+            }
+    
+            .client_avatar{
+
+                background-color: rgb(76, 138, 196);
+                height: 40px;
+                width: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid $dark_blue;
+                border-radius: 50%;
+                font-weight: 900;
+            }
+            h2{
+                color: $text_gray;
+                font-size: 10pt;
+            }
+            
+            .supplier_addres{
+                width: 40%;
+                overflow: hidden;
+            }
+            .button{
+                margin: 5px 2px;
+                font-size: 1rem;
+                padding: 2px;
+                transition: 200ms ease-in;
+                justify-self: flex-end;
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    transition: 200ms ease-in;
+                }
+            }
+        }
+    }
+}
+
+// ORDERS -------------------------------------------------
+.orders_module{
+    
+    .add_order_form{    
+        padding: 20px 0;
+
+        display: none;
+        flex-flow: column wrap;
+        justify-content: space-between;
+
+        label{
+            margin-top: 10px;
+        }
+
+        input{
+            border: 2px solid $light_blue;
+        }
+
+        .product_suggestion{
+            margin: 10px 0;
+            background-color: $light_blue;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 1.5rem;
+
+            &:hover{
+                background-color: white;
+                border: 3px solid $light_blue;
+                transition: 200ms ease-in;
+                cursor: pointer;
+            }
+        }
+    }
+    .registered_orders{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        .registered_order{
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            margin: 10px 0;
+            
+            &:hover{
+
+                -webkit-box-shadow: 0px 0px 3px 0px #000000; 
+                box-shadow: 0px 0px 3px 0px #000000;
+                transition: 200ms ease-in;
+            }
+            .order_data{
+                display: flex;
+                justify-content: space-between;
+                background-color: $light_blue;
+                padding: 5px;
+                
+                h2{
+                    font-size: 1rem;
+                }
+            }
+    
+            .details{
+                background-color: $dark_blue;
+                color: white;
+                padding: 5px;
+    
+                .detail{
+                    padding: 10px 0;
+                    border-bottom: 1px solid white;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

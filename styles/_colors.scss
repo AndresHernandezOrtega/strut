@@ -1,0 +1,11 @@
+$light_blue : #15BDCA;
+$dark_blue : #3E4095;
+$text_gray: rgb(70, 70, 70);
+
+// Normalize
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}

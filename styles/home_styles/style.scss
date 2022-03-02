@@ -1,0 +1,88 @@
+@import "../colors";
+
+// Normalize
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    background-color: $light_blue;
+}
+
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: white;
+
+    -webkit-box-shadow: 0px -2px 15px 0px #7c7c7c; 
+    box-shadow: 0px -2px 15px 0px #7c7c7c;
+    img{
+        height: 100%;
+        background-color: white;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .buttons_login{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+    }
+}
+.login_btn, .register_btn{
+
+    width: 48%;
+}
+.login_btn{
+    color: gray;
+    background-color: transparent;
+    border: none;
+    font-size: 1.15rem;
+    transition: 200ms ease-out;
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        transition: 200ms ease-in;
+    }
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-flow: row-reverse;
+    align-items: center;
+    margin: 10vh 5vw;
+    
+    .info{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        padding: 20px 100px;
+        h2{
+            color: white;
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin: 20px 0;
+            font-weight: 900;
+        }
+
+        p{
+            color: rgb(70, 70, 70);
+            font-size: 1.5rem;
+            
+        
+        }
+    }
+
+    img{
+        transition: 200ms ease-in;
+        transform: scale(0.8);
+    }
+
+}

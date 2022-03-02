@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strut | Registrate</title>
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+
+    <!-- STYLESSHETS -->
+    <link rel="stylesheet" href="../styles/register_styles/style.css">
+    <link rel="stylesheet" href="../styles/components_styles/style.css">
+    <link rel="stylesheet" href="../styles/home_styles/style.css">
+</head>
+<body>
+
+    <header>
+        <img src="../assets/Logo Strut.png" alt="Logo" class="logo">
+        <div class="buttons_login">
+        </div>
+    </header>
+
+    <main>
+
+
+        <div class="register_form">
+            <h2>Registrate</h2>
+            
+            <div class="credenciales" hidden>Debes ingresar todos los campos</div>
+            <select id="role" class="input">
+                <option value="admin">Crear y administrar un negocio nuevo</option>
+                <option value="employ">Unirme a un negocio existente como empleado</option>
+            </select>
+    
+            <input type="number" class="input" id="bussines_id" placeholder="ID del negocio al que quieres unirte" hidden>
+    
+            <div class="bussines_info">
+    
+                <h2>Informacion de tu negocio</h2>
+                <input type="text" class="input" id="bussines_name" placeholder="Nombre del negocio">
+    
+                <textarea id="description" cols="20" rows="5" placeholder="Descripcion de tu negocio" class="input" style="height: unset; padding: 10px ;
+                width: 100%;"></textarea>
+            </div>
+            
+
+            <input type="email" class="input " id="email" placeholder="Correo electrónico">
+            <input type="text" class="input name" id="name" placeholder="Nombres">
+            <input type="text" class="input lastName" id="lastName" placeholder="Apellidos">
+    
+            <input type="password" class="input pass" id="password" placeholder="Contraseña">
+            <input type="password" class="input pass" id="repPassword" placeholder="Confirmación">
+    
+            <button class="button_prymary register_btn">Registrate</button>
+            
+            <a href="../views/login.html">¿Ya tienes una cuenta?. Accede aqui</a>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+</html>

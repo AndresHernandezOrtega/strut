@@ -1,0 +1,62 @@
+@import "../colors";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+body{
+    height: 100vh;
+    
+    
+    main{
+
+        display: flex;
+        flex-flow:row-reverse wrap;
+        
+        
+        aside{
+            background-color: $dark_blue;
+            height: 100%;
+            
+        }
+        
+        form{
+            width: 80%;
+            border-radius: 3px;
+            border: none;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 70vh;
+            padding: 50px;
+    
+            input{
+                width: 80%;
+            }
+            h2{
+                font-size: 2rem;
+                color: $dark_blue;
+            }
+    
+            .error_credentials{
+                
+                height: 40px;
+                background-color: rgb(252, 99, 99);
+                color: #fff;
+                font-size: 1.5rem;
+                border: 2px solid red;
+                border-radius: 3px;
+                padding: 10px;
+                margin: 10px 0;
+                text-align: center;
+                line-height: 50%;
+                
+            }
+
+        }
+    }
+}
